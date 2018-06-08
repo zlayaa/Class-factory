@@ -24,7 +24,6 @@ class Factory
     else 
       return raise NameError, "No member @#{entity} in struct"
     end
-
   end
 
   class_eval &block if block_given? # block.call if block_given?

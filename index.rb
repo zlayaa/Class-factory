@@ -4,6 +4,8 @@ Customer = Factory.new(:name, :address, :zip)
 
 joe = Customer.new('Joe Smith', '123 Maple, Anytown NC', 12345)
 
+joe[3] = "test"
+
 p joe.name
 p joe['name']
 p joe[:name]
